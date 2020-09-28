@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  node10:
+    build:
+      context: .
+      args:
+        IMAGE: node:10.16.0-alpine
+  
+  node14:
+    build:
+      context: .
+      args:
+        IMAGE: node:14.11.0-alpine3.12
